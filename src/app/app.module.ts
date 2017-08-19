@@ -9,7 +9,11 @@ import { Store } from 'store';
 // containers
 import { AppComponent } from './containers/app/app.component';
 
+// feature modules
+import { AuthModule } from '../auth/auth.module';
+
 // components
+import { AppHeaderComponent, AppNavComponent } from './components';
 
 // routes
 export const ROUTES: Routes = [];
@@ -17,10 +21,13 @@ export const ROUTES: Routes = [];
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    AuthModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    AppHeaderComponent,
+    AppNavComponent
   ],
   providers: [
     Store
@@ -29,4 +36,5 @@ export const ROUTES: Routes = [];
     AppComponent
   ]
 })
-export class AppModule {}
+export class AppModule {
+}
