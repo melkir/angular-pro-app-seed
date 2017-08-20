@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Store } from 'store';
+import { User as FirebaseUser } from 'firebase/app';
 
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 
 export interface User {
@@ -27,6 +29,14 @@ export class AuthService {
     });
 
   constructor(private af: AngularFireAuth, private store: Store) {
+  }
+
+  get authState(): Observable<FirebaseUser> {
+    return this.af.authState;
+  }
+
+  get user() {
+    return this.af.auth.currentUser;
   }
 
   createUser(email: string, password: string) {

@@ -4,25 +4,27 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { Store } from 'store';
 
-// feature modules
-
 // containers
 import { AppComponent } from './containers/app/app.component';
 
 // feature modules
 import { AuthModule } from '../auth/auth.module';
+import { HealthModule } from '../health/health.module';
 
 // components
 import { AppHeaderComponent, AppNavComponent } from './components';
 
 // routes
-export const ROUTES: Routes = [];
+export const ROUTES: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'schedule' }
+];
 
 @NgModule({
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
-    AuthModule
+    AuthModule,
+    HealthModule
   ],
   declarations: [
     AppComponent,
