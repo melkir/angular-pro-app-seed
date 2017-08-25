@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
-import { Workout } from '../../../shared/services/workouts/workouts.service';
+import { Workout } from '../../../shared/services';
 
 @Component({
   selector: 'workout-form',

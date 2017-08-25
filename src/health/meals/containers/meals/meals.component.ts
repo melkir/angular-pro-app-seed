@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
 import { Store } from 'store';
-import { Meal, MealsService } from '../../../shared/services/meals/meals.service';
+import { Meal, MealsService } from '../../../shared/services';
 
 @Component({
   selector: 'meals',

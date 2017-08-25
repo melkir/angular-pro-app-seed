@@ -2,9 +2,9 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AuthFormComponent } from './components/auth-form/auth-form.component';
-import { AuthService } from './services/auth/auth.service';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthFormComponent } from './components';
+import { AuthService } from './services';
+import { AuthGuard } from './guards';
 
 @NgModule({
   imports: [

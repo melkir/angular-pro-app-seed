@@ -4,7 +4,11 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ScheduleComponent } from './containers/schedule/schedule.component';
+// components
+
+// containers
+import { ScheduleComponent } from './containers';
+import { ScheduleCalendarComponent, ScheduleControlsComponent, ScheduleDaysComponent } from './components';
 
 export const ROUTES: Routes = [
   { path: '', component: ScheduleComponent }
@@ -17,7 +21,10 @@ export const ROUTES: Routes = [
     RouterModule.forChild(ROUTES)
   ],
   declarations: [
-    ScheduleComponent
+    ScheduleComponent,
+    ScheduleCalendarComponent,
+    ScheduleDaysComponent,
+    ScheduleControlsComponent
   ]
 })
 export class ScheduleModule {

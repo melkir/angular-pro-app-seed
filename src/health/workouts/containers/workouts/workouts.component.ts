@@ -5,7 +5,7 @@ import { Store } from 'store';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { Workout, WorkoutsService } from '../../../shared/services/workouts/workouts.service';
+import { Workout, WorkoutsService } from '../../../shared/services';
 
 @Component({
   selector: 'workouts',

@@ -5,12 +5,10 @@ import { RouterModule } from '@angular/router';
 // third-party modules
 import { AngularFireDatabaseModule } from 'angularfire2/database'
 
-import { MealsService } from './services/meals/meals.service';
-import { WorkoutsService } from './services/workouts/workouts.service';
+import { MealsService, WorkoutsService } from './services';
 
-import { ListItemComponent } from './components/list-item/list-item.component';
-import { JoinPipe } from './pipes/join.pipe';
-import { WorkoutPipe } from './pipes/workout.pipe';
+import { ListItemComponent } from './components';
+import { JoinPipe, WorkoutPipe } from './pipes';
 
 @NgModule({
   imports: [

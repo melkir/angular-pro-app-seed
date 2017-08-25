@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs/Subscription';
 import { Router } from '@angular/router';
 
 import { Store } from 'store';
-import { AuthService, User } from '../../../auth/shared/services/auth/auth.service';
+import { AuthService, User } from '../../../auth/shared/services';
 
 @Component({
   selector: 'app-root',

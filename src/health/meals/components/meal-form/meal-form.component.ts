@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
 
-import { Meal } from '../../../shared/services/meals/meals.service';
+import { Meal } from '../../../shared/services';
 
 @Component({
   selector: 'meal-form',

@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 
-import { WorkoutsService, Workout } from '../../../shared/services/workouts/workouts.service';
+import { WorkoutsService, Workout } from '../../../shared/services';
 
 @Component({
   selector: 'workout',

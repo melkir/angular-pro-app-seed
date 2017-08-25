@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap'
 
-import { Meal, MealsService } from '../../../shared/services/meals/meals.service';
+import { Meal, MealsService } from '../../../shared/services';
 
 @Component({
   selector: 'meal',

@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Store } from 'store';
 
 // containers
-import { AppComponent } from './containers/app/app.component';
+import { AppComponent } from './containers';
 
 // feature modules
 import { AuthModule } from '../auth/auth.module';

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { User } from '../../../auth/shared/services/auth/auth.service';
+import { User } from '../../../auth/shared/services';
 
 @Component({
   selector: 'app-header',

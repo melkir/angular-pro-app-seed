@@ -4,9 +4,8 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import 'rxjs/add/operator/pluck';
 import 'rxjs/add/operator/distinctUntilChanged';
 
-import { User } from './auth/shared/services/auth/auth.service';
-import { Meal } from './health/shared/services/meals/meals.service';
-import { Workout } from './health/shared/services/workouts/workouts.service';
+import { User } from './auth/shared/services';
+import { Meal, Workout } from './health/shared/services';
 
 export interface State {
   user: User,
