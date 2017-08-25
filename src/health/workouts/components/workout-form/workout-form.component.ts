@@ -1,12 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  Input,
-  OnChanges,
-  Output,
-  SimpleChanges
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 import { Workout } from '../../../shared/services';
@@ -163,7 +155,7 @@ export class WorkoutFormComponent implements OnChanges {
     return this.form.get('type').value;
   }
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges() {
     if (this.workout && this.workout.name) {
       this.exists = true;
       const value = this.workout;

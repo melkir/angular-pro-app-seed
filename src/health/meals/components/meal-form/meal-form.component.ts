@@ -1,7 +1,4 @@
-import {
-  ChangeDetectionStrategy, Component, EventEmitter, Input, OnChanges, Output,
-  SimpleChanges
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
 
 import { Meal } from '../../../shared/services';
@@ -116,11 +113,11 @@ export class MealFormComponent implements OnChanges {
   exists = false;
 
   public form = this.fb.group({
-    name: [ '', Validators.required ],
-    ingredients: this.fb.array([ '' ])
+    name: ['', Validators.required],
+    ingredients: this.fb.array([''])
   });
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges() {
     if (!(this.meal && this.meal.name)) return;
 
     this.exists = true;

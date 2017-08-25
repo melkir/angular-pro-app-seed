@@ -1,14 +1,19 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 // third-party modules
-import { AngularFireDatabaseModule } from 'angularfire2/database'
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { MealsService, WorkoutsService } from './services';
-
+// components
 import { ListItemComponent } from './components';
-import { JoinPipe, WorkoutPipe } from './pipes';
+
+// services
+import { MealsService, WorkoutsService, ScheduleService } from './services';
+
+// pipes
+import { JoinPipe } from './pipes/join.pipe';
+import { WorkoutPipe } from './pipes/workout.pipe';
 
 @NgModule({
   imports: [
@@ -33,8 +38,9 @@ export class SharedModule {
       ngModule: SharedModule,
       providers: [
         MealsService,
-        WorkoutsService
+        WorkoutsService,
+        ScheduleService
       ]
-    }
+    };
   }
 }
